@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+/*  Global Page Elements  */
+:root {
+  --bs-body-bg: transparent;
+
+}
+html {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+html, * {
+    box-sizing: border-box;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+   color: white;
+}
+
+/*  Header  */
+.nav {
+  justify-content: flex-end;
+
+}
+
+.nav-tabs {
+  --bs-nav-tabs-link-active-bg: transparent;
+  color: white;
+
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: white;
+
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: white;
+}
+
+.nav-link {
+  color: #db2e01;
+}
+
+.row {
+  flex-direction: row;
+
+}
+
+header {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(44, 44, 44, 1);
+    position: fixed;
+    width: calc(100%);
+    margin: -8px;
+}
+
+h1 {
+    display: flex;
+    color: #fffffe;
+    line-height: 40px;
+    font-size: 48px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  justify-content: center;
+  display: flex;
+
+}
+
+.listspace {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+/*  Header Helper Classes  */
+
+.top-links {
+    display: flex;
+    margin-left: auto;
+    font-size: 18px;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.top-links a {
+  margin-right: 25px;
+  color: #fffffe;
+}
+
+/*  Main  */
+
+main {
+  padding-top: 150px;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.um {
+    font-weight: 700;
+    background: -webkit-linear-gradient(#005030, #f47321);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+/*  About Me Section  */
+
+#about-me{
+  border: 2px solid black;
+  box-shadow: -0px 0px 20px #880000;
+}
+
+.page-title{
+ margin-top: 20px;
+ font-size: 30px;
+ font-family: 'Roboto', sans-serif;
+ text-align: left;
+ font-weight: bold;
+ display: flex;
+ flex-wrap: wrap;
+ margin-right: 400px;
+ line-height: 65px;
+ color: #94a1b2;
+}
+
+/*  Projects Section  */
+
+.my-projects{
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.projectName {
+    margin-top: 75px;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: #fffffe;
+}
+
+.workInProgress{
+    height: 300px; 
+}
+
+/*  Footer  */
+
+footer {
+    margin-top: 70px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+
+/*  Footer Helper Classes  */
+
+#contactImages {
+    height: 60px;
+
+}
